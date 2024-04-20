@@ -9,13 +9,13 @@ public class Main {
         
         System.out.println("Ingrese un número entero en el rango [3, 10]: ");
         if (!scanner.hasNextInt()) {
-            System.out.println("Error: No se ingresó un número entero.");
+            System.out.println("No se ingresó un número entero.");
             System.exit(1);
         }
         int cant = scanner.nextInt();
         
         if (cant < 3 || cant > 10) {
-            System.out.println("Error: El número ingresado está fuera del rango especificado.");
+            System.out.println("fuera del rango especificado.");
             System.exit(1);
         }
         
@@ -24,7 +24,7 @@ public class Main {
         System.out.println("Ingrese " + cant + " números enteros para llenar el array:");
         for (int i = 0; i < cant; i++) {
             if (!scanner.hasNextInt()) {
-                System.out.println("Error: No se ingresó un número entero.");
+                System.out.println("No se ingresó un número entero.");
                 System.exit(1);
             }
             array[i] = scanner.nextInt();
